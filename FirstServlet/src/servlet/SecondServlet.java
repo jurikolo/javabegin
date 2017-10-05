@@ -21,7 +21,7 @@ public class SecondServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet SecondServlet at " + request.getContextPath() + "</h1>");
-            out.println("<h2>Превед, медвед!</h2>");
+            out.println("<h2>Превед, " + request.getParameter("p1") + "</h2>");
             out.println("</body>");
             out.println("</html>");
         } finally {
